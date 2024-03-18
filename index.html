@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | alura</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/LOGO-3.png">
+</head>
+<body>
+    <div class="body">
+        <header class="logo-titulo">
+            <img src="img/Logo@2x.png" alt="logo" class="logo">
+            <h1 class="titulo">encriptador de texto</h1>
+        </header>
+        <div class="encriptador">
+            <div class="mostrar-texto">
+                <textarea id="textarea" class="ingresar-texto" placeholder="Ingresa texto aqui!"></textarea>
+                <div class="advertencia">
+                    <i class='bx bx-error-circle'></i>
+                    <p class="parrafo-advertencia">Solo introduce minusculas y sin acentos.</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" type="button" onclick="btnEncriptar()">Encriptar!</button>
+                    <button class="btn-desencriptar" type="button" onclick="btnDesencriptar()">Desencriptar!</button>
+                </div> 
+            </div>
+        </div>
+        <div class="desencriptador">
+            <div class="img-texto">
+                    <textarea id="mensaje"  class="mensaje"></textarea> 
+                    <img src="img/busqueda-3.png" class="imagen" id="imagen">
+                    <h2 id="texto-mensaje" class="texto-1">Ningun texto fue encontrado. </h2>
+                    <h3 id="parrafo" class="texto-2">Ingresa el texto que deseas encriptar o desencriptar.</h3>   
+                    <button class="copiar"  type="button" onclick="copiar()" id="copiar">copiar!</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="logo-final">
+                <img src="img/LOGO-2.png" alt="icon" class="mi-logo">
+                <p class="derechos">&copy Derechos reservados |</p>
+                <a href="https://www.linkedin.com/in/jaime-moral-mu%C3%B1oz-26442a2aa/" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/jaimemor24" class="git"><i class='bx bxl-github'></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
